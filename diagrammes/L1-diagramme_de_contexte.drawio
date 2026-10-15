@@ -1,0 +1,192 @@
+<mxfile>
+  <diagram id="car-hms-context" name="Diagramme de contexte">
+    <mxGraphModel dx="1500" dy="800" grid="1" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2760" pageHeight="1860" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#1A1A1A;" value="Diagramme de contexte du système CAR-HMS" vertex="1">
+          <mxGeometry height="40" width="2640" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#5F6368;" value="Système de gestion des événements de randonnée du Cairn.&amp;nbsp;" vertex="1">
+          <mxGeometry height="24" width="2640" x="60" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="navbox" parent="1" style="rounded=1;arcSize=4;html=1;fillColor=none;strokeColor=#8A9199;dashed=1;dashPattern=3 5;verticalAlign=top;align=center;fontSize=10;fontColor=#5F6368;spacingTop=6;spacingLeft=10;spacingRight=10;" value="&lt;i&gt;Tous u&lt;/i&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(95, 99, 104), rgb(150, 153, 157));&quot;&gt;tilisateurs&lt;/i&gt;" vertex="1">
+          <mxGeometry height="826" width="510" x="370" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="regbox" parent="1" style="rounded=1;arcSize=4;html=1;fillColor=none;strokeColor=#8A9199;dashed=1;dashPattern=3 5;verticalAlign=top;align=center;fontSize=10;fontColor=#5F6368;spacingTop=6;spacingLeft=10;spacingRight=10;" value="&lt;i&gt;Utilisateurs enregistrés : authentification et autorisation&lt;br&gt;requises (section 2.2)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="626" width="490" x="380" y="359" as="geometry" />
+        </mxCell>
+        <mxCell id="visiteur" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Visiteur&lt;/b&gt;&lt;br&gt;Personne sans compte. Membre du club : peut s&#39;enregistrer avec un code d&#39;invitation." vertex="1">
+          <mxGeometry height="96" width="414" x="446" y="223" as="geometry" />
+        </mxCell>
+        <mxCell id="utilenr" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Utilisateur enregistré&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#1457D6&quot;&gt;Acteur de la figure 1 qui regroupe les rôles disposant d&#39;un compte. Le glossaire ne le définit pas.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="92" width="414" x="446" y="407" as="geometry" />
+        </mxCell>
+        <mxCell id="randonneur" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Randonneur&lt;/b&gt;&lt;br&gt;Adhésion active et niveau d&#39;habileté suffisant requis pour s&#39;inscrire." vertex="1">
+          <mxGeometry height="92" width="414" x="446" y="547" as="geometry" />
+        </mxCell>
+        <mxCell id="organisateur" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Organisateur de randonnée&lt;/b&gt;&lt;br&gt;Certification de chef de randonnée valide et niveau d&#39;organisateur suffisant." vertex="1">
+          <mxGeometry height="92" width="414" x="446" y="711" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Administrateur&lt;/b&gt;&lt;br&gt;Employé ou membre du conseil d&#39;administration." vertex="1">
+          <mxGeometry height="92" width="414" x="446" y="863" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" edge="1" parent="1" source="randonneur" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#5F6368;strokeWidth=1.4;startArrow=none;endArrow=block;endFill=0;endSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="utilenr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g2" edge="1" parent="1" source="organisateur" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#5F6368;strokeWidth=1.4;startArrow=none;endArrow=block;endFill=0;endSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="randonneur" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g3" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#5F6368;strokeWidth=1.4;startArrow=none;endArrow=block;endFill=0;endSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="utilenr" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="909" />
+              <mxPoint x="412" y="453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="carhms" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E3F0FF;strokeColor=#1A6FC4;strokeWidth=2;fontColor=#10304F;fontSize=12;align=center;verticalAlign=middle;spacingLeft=18;spacingRight=18;" value="&lt;b style=&quot;font-size:20px;&quot;&gt;CAR-HMS&lt;/b&gt;&lt;br&gt;&lt;i&gt;Le système à construire&lt;/i&gt;&lt;br&gt;&lt;br&gt;Application Web de gestion des événements de randonnée du Club de randonnée Cairn : création et cycle de vie des randonnées, inscriptions et liste d&#39;attente, comptes des randonneurs, rapports d&#39;utilisation des sentiers.&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#1457D6&quot;&gt;&lt;i&gt;La structure interne, la base de données (H4), la copie locale des sentiers (H5) et la minuterie (H2) ne sont pas montrées.&lt;/i&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="460" width="520" x="1280" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="trig" parent="1" style="shape=note;size=18;whiteSpace=wrap;html=1;fillColor=#FBFBFC;strokeColor=#8A9199;fontColor=#1A1A1A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=14;spacingRight=24;" value="&lt;font color=&quot;#1457D6&quot;&gt;&lt;b&gt;Déclenchements internes (H2)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;b&gt;Fermer une randonnée&lt;/b&gt; : à la date limite d&#39;inscription.&lt;br&gt;&lt;b&gt;Envoyer un rappel de randonnée&lt;/b&gt; : un jour avant (section 3.2).&lt;br&gt;&lt;font color=&quot;#1457D6&quot;&gt;Aucun acteur de l&#39;environnement ne les déclenche. Leur seul effet visible ici est l&#39;envoi du rappel par courriel.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="124" width="520" x="1280" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="a_trig" edge="1" parent="1" source="trig" style="edgeStyle=none;html=1;rounded=0;strokeColor=#8A9199;strokeWidth=1;dashed=1;dashPattern=1 3;startArrow=none;endArrow=none;endFill=0;" target="carhms" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ccn" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F0F1F3;strokeColor=#8A9199;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Liste des sentiers de la CCN&lt;/b&gt;&lt;br&gt;&lt;i&gt;Système externe (figure 1)&lt;/i&gt;&lt;br&gt;Informations sur les sentiers publiées par la Commission de la capitale nationale (ArcGIS Hub, section 1.2). Contrainte section 2.3 : les informations sur les sentiers doivent en provenir." vertex="1">
+          <mxGeometry height="190" width="460" x="2220" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="meteo" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F0F1F3;strokeColor=#8A9199;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Service météorologique&lt;/b&gt;&lt;br&gt;&lt;i&gt;Système externe (figure 1)&lt;/i&gt;&lt;br&gt;Fournit les prévisions pour un lieu et une date. Section 2.2 : son indisponibilité ne doit pas empêcher le système de fonctionner." vertex="1">
+          <mxGeometry height="190" width="460" x="2220" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="courriel" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F0F1F3;strokeColor=#8A9199;strokeWidth=1.5;fontColor=#1457D6;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;dashed=1;dashPattern=8 4;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Service de courriel&lt;/b&gt;&lt;br&gt;&lt;i&gt;Système externe ajouté par hypothèse (H1)&lt;/i&gt;&lt;br&gt;Achemine les courriels vers les randonneurs. Ne figure pas dans la figure 1 de CAR-Req-01, alors que quatre cas d&#39;utilisation envoient des courriels." vertex="1">
+          <mxGeometry height="160" width="520" x="1280" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="contraintes" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBFBFC;strokeColor=#C8CDD2;fontColor=#1A1A1A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=14;spacingRight=14;" value="&lt;b&gt;Contraintes techniques (section 2.3)&lt;/b&gt;&lt;br&gt;&lt;br&gt;Frontend : Angular + TypeScript&lt;br&gt;Backend : Kotlin + Spring Boot&lt;br&gt;Informations sur les sentiers obtenues des données publiées par la CCN&lt;br&gt;&lt;br&gt;&lt;b&gt;Environnement (section 1.4)&lt;/b&gt;&lt;br&gt;Application hébergée localement, accès par navigateur Web récent, données stockées de façon sécuritaire." vertex="1">
+          <mxGeometry height="190" width="460" x="2220" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="1" source="visiteur" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.08;entryDx=0;entryDy=0;" target="carhms" value="• Parcourir les randonnées : recherche par nom de sentier,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;date ou difficulté, ou liste triée par date&lt;br&gt;• Enregistrer un randonneur : code d&#39;invitation, informations,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;décharge de responsabilité (tuteur légal si moins de 18 ans)&lt;br&gt;• Randonnées affichées : randonnée, organisateur, places restantes&lt;br&gt;• Nouveau randonneur ajouté avec une adhésion active">
+          <mxGeometry relative="1" x="-0.6475" y="-49" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="1" source="utilenr" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.26;entryDx=0;entryDy=0;" target="carhms" value="• Se connecter : courriel et mot de passe&lt;br&gt;• Se déconnecter&lt;br&gt;• Parcourir les randonnées&lt;br&gt;• Autorisation accordée selon le rôle&lt;br&gt;• Randonnées ouvertes affichées">
+          <mxGeometry relative="1" x="-0.568" y="-11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="1" source="randonneur" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.44;entryDx=0;entryDy=0;" target="carhms" value="• S&#39;inscrire à une randonnée&lt;br&gt;• Annuler une inscription&lt;br&gt;• Mettre à jour un randonneur : ses informations&lt;br&gt;• Inscription confirmée ou position en liste d&#39;attente&lt;br&gt;• Randonnées correspondant à son niveau d&#39;habileté">
+          <mxGeometry relative="1" x="-0.5218" y="6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="1" source="organisateur" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.62;entryDx=0;entryDy=0;" target="carhms" value="• Créer une randonnée : sentier, titre, description, date et heure&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;de début, durée prévue, date limite d&#39;inscription, capacité&lt;br&gt;• Annuler une randonnée : motif&lt;br&gt;• Identifiant unique attribué, randonnée enregistrée ouverte&lt;br&gt;&lt;font color=&quot;#1457D6&quot;&gt;• Refus si une règle de création n&#39;est pas respectée : déduit&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;de « si les informations sont valides et complètes » (section 3.2)&lt;/font&gt;">
+          <mxGeometry relative="1" x="-0.6213" y="37" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f5" edge="1" parent="1" source="admin" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.90;entryDx=0;entryDy=0;" target="carhms" value="• Mettre à jour un randonneur : statut d&#39;adhésion,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;certification de chef de randonnée, niveau d&#39;organisateur&lt;br&gt;• Annuler une randonnée : motif&lt;br&gt;• Générer un rapport d&#39;utilisation des sentiers :&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;sentier, date de début, date de fin&lt;br&gt;• Rapport produit : nombre de randonnées, de participants,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;de randonnées annulées">
+          <mxGeometry relative="1" x="-0.5729" y="32" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f6" edge="1" parent="1" source="carhms" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;exitX=1;exitY=0.15;exitDx=0;exitDy=0;entryX=0;entryY=0.45;entryDx=0;entryDy=0;" target="ccn" value="• Informations demandées sur un sentier&lt;br&gt;• Nom, type, surface, difficulté, saison d&#39;ouverture,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;secteur et zone, stationnement, tracé et emplacement,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;randonnée permise ou non">
+          <mxGeometry relative="1" x="-0.4725" y="8" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f7" edge="1" parent="1" source="carhms" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;exitX=1;exitY=0.80;exitDx=0;exitDy=0;entryX=0;entryY=0.45;entryDx=0;entryDy=0;" target="meteo" value="• Prévisions demandées au point de départ du sentier&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;pour la date de la randonnée (section 3.2)&lt;br&gt;• Prévisions obtenues, ou aucune réponse : le rappel est&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;alors envoyé sans avertissement météorologique">
+          <mxGeometry relative="1" x="-0.421" y="16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8" edge="1" parent="1" source="carhms" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1457D6;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;dashed=1;dashPattern=8 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="courriel" value="• Confirmation d&#39;inscription ou position en liste d&#39;attente&lt;br&gt;• Promotion depuis la liste d&#39;attente&lt;br&gt;• Rappel de randonnée, avec avertissement météo s&#39;il y a lieu&lt;br&gt;• Annulation de randonnée, avec motif">
+          <mxGeometry relative="1" x="-0.1" y="-130" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9" edge="1" parent="1" source="courriel" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1457D6;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;dashed=1;dashPattern=8 4;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="randonneur" value="• Livraison des courriels aux randonneurs">
+          <mxGeometry relative="1" x="-0.5775" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="1090" />
+              <mxPoint x="340" y="593" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C8CDD2;fontColor=#1A1A1A;fontSize=11;align=left;verticalAlign=top;spacingLeft=16;spacingRight=16;spacingTop=10;" value="&lt;b&gt;Légende&lt;/b&gt;" vertex="1">
+          <mxGeometry height="540" width="520" x="60" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="lg0s" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E3F0FF;strokeColor=#1A6FC4;strokeWidth=2;fontColor=#10304F;fontSize=12;align=center;verticalAlign=middle;spacingLeft=18;spacingRight=18;" value="" vertex="1">
+          <mxGeometry height="22" width="44" x="80" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="lg0t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Système à construire, vu comme une boîte noire" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1s" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="" vertex="1">
+          <mxGeometry height="22" width="44" x="80" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Rôle d&#39;utilisateur" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2s" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F0F1F3;strokeColor=#8A9199;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="" vertex="1">
+          <mxGeometry height="22" width="44" x="80" y="1382" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Système externe (CAR-Req-01, figure 1)" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1382" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3s" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F0F1F3;strokeColor=#8A9199;strokeWidth=1.5;fontColor=#1457D6;fontSize=11;align=center;verticalAlign=middle;spacingLeft=8;spacingRight=8;dashed=1;dashPattern=8 4;" value="" vertex="1">
+          <mxGeometry height="22" width="44" x="80" y="1424" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Système externe ajouté par hypothèse" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1424" as="geometry" />
+        </mxCell>
+        <mxCell id="lg4s" parent="1" style="rounded=1;arcSize=4;html=1;fillColor=none;strokeColor=#8A9199;dashed=1;dashPattern=3 5;verticalAlign=top;align=center;fontSize=10;fontColor=#5F6368;spacingTop=6;spacingLeft=10;spacingRight=10;" value="" vertex="1">
+          <mxGeometry height="22" width="44" x="80" y="1466" as="geometry" />
+        </mxCell>
+        <mxCell id="lg4t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Regroupement de rôles" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1466" as="geometry" />
+        </mxCell>
+        <mxCell id="lge6" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1A1A1A;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1511" as="sourcePoint" />
+            <mxPoint x="124" y="1511" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lge6t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Flux de données entre l&#39;environnement et le système." vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="lge6b" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="La flèche part de celui qui amorce l&#39;échange." vertex="1">
+          <mxGeometry height="20" width="430" x="138" y="1516" as="geometry" />
+        </mxCell>
+        <mxCell id="lge8" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#44474A;strokeWidth=1.4;fontSize=10;fontColor=#1457D6;labelBackgroundColor=#FFFFFF;startArrow=none;endArrow=blockThin;endFill=1;endSize=7;align=left;verticalAlign=middle;dashed=1;dashPattern=8 4;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1561" as="sourcePoint" />
+            <mxPoint x="124" y="1561" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lge8t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Flux ajouté par hypothèse" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="lge9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#5F6368;strokeWidth=1.4;startArrow=none;endArrow=block;endFill=0;endSize=12;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1603" as="sourcePoint" />
+            <mxPoint x="124" y="1603" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lge9t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#1A1A1A;" value="Généralisation d&#39;acteur (figure 1)" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1592" as="geometry" />
+        </mxCell>
+        <mxCell id="lg10s" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" value="&lt;font color=&quot;#1457D6&quot;&gt;&lt;b&gt;Texte&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="22" width="44" x="80" y="1634" as="geometry" />
+        </mxCell>
+        <mxCell id="lg10t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" value="&lt;font color=&quot;#1457D6&quot;&gt;Hypothèse ou déduction de notre part&lt;/font&gt;" vertex="1">
+          <mxGeometry height="22" width="430" x="138" y="1634" as="geometry" />
+        </mxCell>
+        <mxCell id="hyp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C8CDD2;fontColor=#1457D6;fontSize=11;align=left;verticalAlign=top;spacingLeft=16;spacingRight=16;spacingTop=10;" value="&lt;b&gt;Hypothèses&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;H1. Service de courriel externe.&lt;/b&gt; Quatre cas d&#39;utilisation envoient des courriels (S&#39;inscrire à une randonnée, Annuler une inscription, Envoyer un rappel de randonnée, Annuler une randonnée), mais la figure 1 de CAR-Req-01 ne montre aucun service de courriel. Nous en ajoutons un dans l&#39;environnement.&lt;br&gt;&lt;br&gt;&lt;b&gt;H2. Minuterie interne.&lt;/b&gt; Fermer une randonnée et Envoyer un rappel de randonnée se déclenchent par le temps (section 3.2), alors que la figure 1 les relie au randonneur. Nous les traitons comme des déclencheurs internes : ce ne sont donc pas des acteurs de l&#39;environnement.&lt;br&gt;&lt;br&gt;&lt;b&gt;H3. Auteur des étapes automatiques.&lt;/b&gt; La section 2.1 exige d&#39;enregistrer l&#39;utilisateur qui a effectué chaque étape du cycle de vie. Pour une fermeture automatique, nous enregistrons le système comme auteur.&lt;br&gt;&lt;br&gt;&lt;b&gt;H4. Base de données interne.&lt;/b&gt; La section 1.4 exige des bases de données sécurisées. Nous la considérons comme une partie du système et non comme un système externe : elle n&#39;apparaît donc pas sur ce diagramme.&lt;br&gt;&lt;br&gt;&lt;b&gt;H5. Copie locale des sentiers.&lt;/b&gt; La section 2.2 exige que l&#39;indisponibilité d&#39;un service externe n&#39;empêche pas le système de fonctionner. Nous conservons une copie locale des informations de sentiers de la CCN. Pour la météo, le comportement est déjà prescrit par la section 3.2.&lt;br&gt;&lt;br&gt;&lt;b&gt;H6. Codes d&#39;invitation.&lt;/b&gt; La section 1.3 place la gestion des adhésions hors de la portée, mais Enregistrer un randonneur valide un code d&#39;invitation. Les administrateurs saisissent les codes dans le CAR-HMS, qui remplace les outils actuels du club (section 1.2) : aucun système externe de liste des membres n&#39;est requis.&lt;br&gt;&lt;br&gt;&lt;b&gt;H7. Enregistrement sans authentification.&lt;/b&gt; La section 2.2 exige une authentification pour tout accès autre que la consultation des randonnées ouvertes, mais un visiteur sans compte doit pouvoir s&#39;enregistrer. Nous traitons Enregistrer un randonneur comme une exception, protégée par le code d&#39;invitation.&lt;br&gt;&lt;br&gt;&lt;b&gt;H8. Point de départ du sentier.&lt;/b&gt; La CCN publie le tracé et l&#39;emplacement du sentier, pas un point de départ nommé. Nous en déduisons le point de rassemblement et le lieu de la requête météorologique.&lt;br&gt;&lt;br&gt;&lt;b&gt;H9. Grand public.&lt;/b&gt; Nous assimilons le grand public mentionné à la section 1.3 au Visiteur du glossaire.&lt;br&gt;&lt;br&gt;&lt;b&gt;H10. Tuteur légal.&lt;/b&gt; Il n&#39;est pas un acteur du système : seul son nom est consigné lors de l&#39;enregistrement d&#39;un randonneur de moins de 18 ans (section 3.2)." vertex="1">
+          <mxGeometry height="540" width="1300" x="640" y="1250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

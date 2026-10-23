@@ -1,5 +1,7 @@
 package seg3502.carhms.application.usecases
 
+import seg3502.carhms.application.dtos.queries.CloseHikeDto
+
 interface CloseHike {
-    // TODO(Mathys): Define closeHike(...) using the inputs from the Close Hike analysis.
+    fun closeHike(closeInfo: CloseHikeDto)
 }

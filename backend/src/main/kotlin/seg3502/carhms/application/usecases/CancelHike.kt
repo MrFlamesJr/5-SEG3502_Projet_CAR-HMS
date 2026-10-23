@@ -1,5 +1,7 @@
 package seg3502.carhms.application.usecases
 
+import seg3502.carhms.application.dtos.queries.CancelHikeDto
+
 interface CancelHike {
-    // TODO(Mathys): Define cancelHike(...) using the inputs from the Cancel Hike analysis.
+    fun cancelHike(cancelInfo: CancelHikeDto)
 }

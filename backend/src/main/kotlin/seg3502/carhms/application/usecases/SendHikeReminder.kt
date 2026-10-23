@@ -1,5 +1,7 @@
 package seg3502.carhms.application.usecases
 
+import seg3502.carhms.application.dtos.queries.SendHikeReminderDto
+
 interface SendHikeReminder {
-    // TODO(Mathys): Define sendHikeReminder(...) using the inputs from the Send Hike Reminder analysis.
+    fun sendHikeReminder(reminderInfo: SendHikeReminderDto)
 }

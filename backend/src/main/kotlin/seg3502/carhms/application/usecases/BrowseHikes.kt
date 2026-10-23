@@ -1,5 +1,9 @@
 package seg3502.carhms.application.usecases
 
+import seg3502.carhms.application.dtos.queries.BrowseHikesDto
+import seg3502.carhms.application.dtos.queries.BrowseHikesForHikerDto
+
 interface BrowseHikes {
-    // TODO(Mathys): Define browseHikes(...) using the search and filtering needs from the Browse Hikes analysis.
+    fun browseHikes(searchInfo: BrowseHikesDto): List<String>
+    fun browseHikesForHiker(hikerInfo: BrowseHikesForHikerDto): List<String>
 }

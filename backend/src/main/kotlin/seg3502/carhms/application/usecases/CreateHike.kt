@@ -1,5 +1,7 @@
 package seg3502.carhms.application.usecases
 
+import seg3502.carhms.application.dtos.queries.CreateHikeDto
+
 interface CreateHike {
-    // TODO(Mathys): Define createHike(...) using the inputs from the Create Hike analysis.
+    fun createHike(hikeInfo: CreateHikeDto): String
 }

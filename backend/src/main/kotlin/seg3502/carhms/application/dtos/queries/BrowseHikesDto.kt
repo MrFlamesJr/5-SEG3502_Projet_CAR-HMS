@@ -1,3 +1,9 @@
 package seg3502.carhms.application.dtos.queries
 
-// TODO(Mathys): Add the search and filtering fields supplied by the Browse Hikes analysis.
+import java.time.LocalDate
+
+data class BrowseHikesDto(
+    val trailName: String? = null,
+    val date: LocalDate? = null,
+    val difficulty: String? = null
+)
